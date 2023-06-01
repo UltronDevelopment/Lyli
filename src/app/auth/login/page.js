@@ -45,7 +45,7 @@ const LoginPage = () => {
                     <input type="password" id="password" name="password" placeholder="Password" onChange={(e) => setPass(e.target.value)} value={pass} required />
                     <input type="submit" id="login" value="Login" />
                 </form>
-                <p><a href="register">Create Account</a> | <a href="#">Forgot Password?</a></p>
+                <p><a href="register">Create Account</a> | <a href="resetpassword">Forgot Password?</a></p>
                 <div id="create-account-wrap"></div>
             </div>
         </>
