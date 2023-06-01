@@ -40,7 +40,7 @@ const RegisterPage = () => {
             <img src="/img/branding.png" alt="" />
             <div id="login-form-wrap">
                 <h2>Register</h2>
-                <h5>{error}</h5>
+                <h5 id="error">{error}</h5>
                 <form id="login-form" onSubmit={handleSubmit}>
                     <input type="text" id="username" name="username" placeholder="Username" autoComplete="off" onChange={(e) => setUser(e.target.value)} value={user} required />
                     <input type="email" id="email" name="email" placeholder="E-Mail" autoComplete="off" onChange={(e) => setEmail(e.target.value)} value={email} required />
