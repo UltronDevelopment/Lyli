@@ -38,7 +38,7 @@ const RegisterPage = () => {
     return (
         <>
             <img src="/img/branding.png" alt="" />
-            <div id="login-form-wrap">
+            <div id="form-wrap-top">
                 <h2>Register</h2>
                 <h5 id="error">{error}</h5>
                 <form id="login-form" onSubmit={handleSubmit}>
@@ -48,7 +48,7 @@ const RegisterPage = () => {
                     <input type="submit" id="login" value="Create account" />
                 </form>
                 <p><a href="login">Already have an account?</a></p>
-                <div id="create-account-wrap"></div>
+                <div id="form-wrap-bottom"></div>
             </div>
         </>
     )

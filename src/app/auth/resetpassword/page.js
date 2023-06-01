@@ -36,7 +36,7 @@ const ResetPasswordPage = () => {
     return (
         <>
             <img src="/img/branding.png" alt="" />
-            <div id="login-form-wrap">
+            <div id="form-wrap-top">
                 <h2>Reset Password</h2>
                 <h5 style={{ color: '#33ff17' }}>{error}</h5>
                 <form id="login-form" onSubmit={handleSubmit}>
@@ -44,7 +44,7 @@ const ResetPasswordPage = () => {
                     <input type="submit" id="login" value="Send" />
                 </form>
                 <p><a href="login">Login</a></p>
-                <div id="create-account-wrap"></div>
+                <div id="form-wrap-bottom"></div>
             </div>
         </>
     )

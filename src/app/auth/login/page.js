@@ -37,7 +37,7 @@ const LoginPage = () => {
     return (
         <>
             <img src="/img/branding.png" alt="" />
-            <div id="login-form-wrap">
+            <div id="form-wrap-top">
                 <h2>Login</h2>
                 <h5 id="error">{error}</h5>
                 <form id="login-form" onSubmit={handleSubmit}>
@@ -46,7 +46,7 @@ const LoginPage = () => {
                     <input type="submit" id="login" value="Login" />
                 </form>
                 <p><a href="register">Create Account</a> | <a href="resetpassword">Forgot Password?</a></p>
-                <div id="create-account-wrap"></div>
+                <div id="form-wrap-bottom"></div>
             </div>
         </>
     )
