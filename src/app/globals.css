@@ -1,6 +1,6 @@
 /* 
     File:    src/app/globals.css
-    Author:  UltronReal <raphael.kiesl@ultronprivat.de>
+    Author:  UltronReal <business@ultronprivat.de>
     Co-Author: RappyTV <rappytv@rappytv.com>
     Date:    1 June 2023
 
@@ -78,6 +78,7 @@ a:active {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
+
 a:focus, a:hover,
 a:link:focus,
 a:link:hover,
