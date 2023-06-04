@@ -29,6 +29,10 @@ const LoginPage = () => {
     const [pass, setPass] = useState('');
     const [error, setError] = useState('');
 
+    useEffect(() => {
+        setError(``);
+    }, [user, pass]);
+
     const handleSubmit = async (event) => {
         event.preventDefault();
         

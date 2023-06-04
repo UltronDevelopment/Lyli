@@ -22,13 +22,17 @@
 'use client'
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const RegisterPage = () => {
     const [user, setUser] = useState('');
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [error, setError] = useState('');
+
+    useEffect(() => {
+        setError(``);
+    }, [user, email, pass]);
 
     const handleSubmit = async (event) => {
         event.preventDefault();
