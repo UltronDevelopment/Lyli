@@ -22,7 +22,7 @@
 'use client'
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const LoginPage = () => {
     const [user, setUser] = useState('');
@@ -42,7 +42,7 @@ const LoginPage = () => {
                 <h2>Login</h2>
                 <h5 id="error">{error}</h5>
                 <form id="login-form" onSubmit={handleSubmit}>
-                    <input type="text" id="username" name="username" placeholder="Username" autoComplete="off" onChange={(e) => setUser(e.target.value)} value={user} required />
+                    <input type="text" id="username" name="username" placeholder="Username or Email" autoComplete="off" onChange={(e) => setUser(e.target.value)} value={user} required />
                     <input type="password" id="password" name="password" placeholder="Password" onChange={(e) => setPass(e.target.value)} value={pass} required />
                     <input type="submit" id="login" value="Login" />
                 </form>
