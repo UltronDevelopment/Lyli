@@ -21,6 +21,7 @@
 
 'use client'
 
+import Link from 'next/link';
 import { useState } from 'react';
 
 const ResetPasswordPage = () => {
@@ -43,7 +44,7 @@ const ResetPasswordPage = () => {
                     <input type="email" id="email" name="email" placeholder="E-Mail" autocomplete="off" onChange={(e) => setEmail(e.target.value)} value={email} required />
                     <input type="submit" id="login" value="Send" />
                 </form>
-                <p><a href="login">Login</a></p>
+                <p><Link href="/auth/login">Login</Link></p>
                 <div id="form-wrap-bottom"></div>
             </div>
         </>

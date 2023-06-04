@@ -21,6 +21,7 @@
 
 'use client'
 
+import Link from 'next/link';
 import { useState } from 'react';
 
 const LoginPage = () => {
@@ -45,7 +46,7 @@ const LoginPage = () => {
                     <input type="password" id="password" name="password" placeholder="Password" onChange={(e) => setPass(e.target.value)} value={pass} required />
                     <input type="submit" id="login" value="Login" />
                 </form>
-                <p><a href="register">Create Account</a> | <a href="resetpassword">Forgot Password?</a></p>
+                <p><Link href="/auth/register">Create Account</Link> | <Link href="/auth/resetpassword">Forgot Password?</Link></p>
                 <div id="form-wrap-bottom"></div>
             </div>
         </>

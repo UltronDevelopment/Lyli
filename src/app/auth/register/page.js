@@ -21,6 +21,7 @@
 
 'use client'
 
+import Link from 'next/link';
 import { useState } from 'react';
 
 const RegisterPage = () => {
@@ -47,7 +48,7 @@ const RegisterPage = () => {
                     <input type="password" id="Password" name="Password" placeholder="Password" onChange={(e) => setPass(e.target.value)} value={pass} required />
                     <input type="submit" id="login" value="Create account" />
                 </form>
-                <p><a href="login">Already have an account?</a></p>
+                <p><Link href="/auth/login">Already have an account?</Link></p>
                 <div id="form-wrap-bottom"></div>
             </div>
         </>
