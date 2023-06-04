@@ -1,5 +1,5 @@
 /* 
-    File:    src/app/auth/resetpassword/layout.js
+    File:    src/app/page.jsx
     Author:  RappyTV <rappytv@rappytv.com>
     Date:    1 June 2023
 
@@ -19,19 +19,8 @@
     © UPN Development 2021
 */
 
-import '../../globals.css'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata = {
-    title: 'Lyli - Reset password',
-}
-
-export default function RootLayout({ children }) {
+export default function Home() {
     return (
-        <html lang="en">
-            <body className={inter.className}>{children}</body>
-        </html>
+        <></>
     )
 }

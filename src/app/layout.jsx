@@ -1,5 +1,5 @@
 /* 
-    File:    src/app/layout.js
+    File:    src/app/layout.jsx
     Author:  RappyTV <rappytv@rappytv.com>
     Date:    1 June 2023
 

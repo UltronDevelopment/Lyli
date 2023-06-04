@@ -1,5 +1,5 @@
 /* 
-    File:    src/app/auth/register/page.js
+    File:    src/app/auth/register/page.jsx
     Author:  RappyTV <rappytv@rappytv.com>
     Date:    1 June 2023
 

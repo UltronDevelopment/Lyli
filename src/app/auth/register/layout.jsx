@@ -1,5 +1,5 @@
 /* 
-    File:    src/app/auth/login/layout.js
+    File:    src/app/auth/register/layout.jsx
     Author:  RappyTV <rappytv@rappytv.com>
     Date:    1 June 2023
 
@@ -25,7 +25,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-    title: 'Lyli - Login',
+    title: 'Lyli - Register',
 }
 
 export default function RootLayout({ children }) {

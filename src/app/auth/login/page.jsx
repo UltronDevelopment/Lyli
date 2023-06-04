@@ -1,5 +1,5 @@
 /* 
-    File:    src/app/auth/resetpassword/page.js
+    File:    src/app/auth/login/page.jsx
     Author:  RappyTV <rappytv@rappytv.com>
     Date:    1 June 2023
 
@@ -24,31 +24,33 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-const ResetPasswordPage = () => {
-    const [email, setEmail] = useState('');
+const LoginPage = () => {
+    const [user, setUser] = useState('');
+    const [pass, setPass] = useState('');
     const [error, setError] = useState('');
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         
-        // Send data to backend
+        // Send credentials to backend
     };
     
     return (
         <>
             <img src="/img/branding.png" alt="" />
             <div id="form-wrap-top">
-                <h2>Reset Password</h2>
-                <h5 style={{ color: '#33ff17' }}>{error}</h5>
+                <h2>Login</h2>
+                <h5 id="error">{error}</h5>
                 <form id="login-form" onSubmit={handleSubmit}>
-                    <input type="email" id="email" name="email" placeholder="E-Mail" autocomplete="off" onChange={(e) => setEmail(e.target.value)} value={email} required />
-                    <input type="submit" id="login" value="Send" />
+                    <input type="text" id="username" name="username" placeholder="Username" autoComplete="off" onChange={(e) => setUser(e.target.value)} value={user} required />
+                    <input type="password" id="password" name="password" placeholder="Password" onChange={(e) => setPass(e.target.value)} value={pass} required />
+                    <input type="submit" id="login" value="Login" />
                 </form>
-                <p><Link href="/auth/login">Login</Link></p>
+                <p><Link href="/auth/register">Create Account</Link> | <Link href="/auth/resetpassword">Forgot Password?</Link></p>
                 <div id="form-wrap-bottom"></div>
             </div>
         </>
     )
 }
 
-export default ResetPasswordPage;
+export default LoginPage;
