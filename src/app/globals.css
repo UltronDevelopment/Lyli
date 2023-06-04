@@ -58,15 +58,16 @@ p {
     margin-bottom: 0;
 }
 
-a {
-    font-family: 'Baloo Chettan 2', cursive;
-    color: #46a3e2;
-}
-
 img {
     width: 30%;
     height: auto;
     padding-top: 0%;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Baloo Chettan 2', cursive;
+    color: #46a3e2;
 }
 
 a,
@@ -84,6 +85,7 @@ a:visited:focus,
 a:visited:hover,
 a:active:focus,
 a:active:hover {
+    text-decoration: underline;
     color: #329dd5;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
