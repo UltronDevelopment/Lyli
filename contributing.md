@@ -46,6 +46,6 @@ A well-structured commit history helps in understanding the changes made to the 
 3. Provide additional details in the commit message body, if necessary.
 
 ## License
-By contributing to this project, you agree that your contributions will be licensed under the project's [license](license). Make sure to review and understand the terms of the license before making any contributions.
+By contributing to this project, you agree that your contributions will be licensed under the project's [license](LICENSE). Make sure to review and understand the terms of the license before making any contributions.
 
 We appreciate your time and effort in making this project better, and we look forward to your contributions!
