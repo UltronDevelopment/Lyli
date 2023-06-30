@@ -41,7 +41,7 @@ const ResetPasswordPage = () => {
                 <h2>Reset Password</h2>
                 <h5 style={{ color: '#33ff17' }}>{error}</h5>
                 <form id="login-form" onSubmit={handleSubmit}>
-                    <input type="email" id="email" name="email" placeholder="E-Mail" autocomplete="off" onChange={(e) => setEmail(e.target.value)} value={email} required />
+                    <input type="email" id="email" name="email" placeholder="E-Mail" autoComplete="off" onChange={(e) => setEmail(e.target.value)} value={email} required />
                     <input type="submit" id="login" value="Send" />
                 </form>
                 <p><Link href="/auth/login">Login</Link></p>
