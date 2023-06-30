@@ -19,7 +19,6 @@
     © UPN Development 2021
 */
 
-import Head from 'next/head';
 import { notFound } from 'next/navigation';
 
 const lists = [
