@@ -1,0 +1,267 @@
+/* 
+    File:    src/app/[list]/style.css
+    Author:  UltronReal <business@ultronprivat.de>
+    Co-Author: RappyTV <rappytv@rappytv.com>
+    Date:    30 June 2023
+
+    This program is free software: you can redistribute it and/or modify it
+    under the terms of the GNU General Public License as published by the Free
+    Software Foundation, either version 3 of the License, or (at your option) any
+    later version.
+
+    This program is distributed in the hope that it will be useful, but WITHOUT
+    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+    FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+    details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program. If not, see <https://www.gnu.org/licenses/>.
+
+    © UPN Development 2021
+*/
+
+body {
+    background-color: #000;
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(9px);
+    -webkit-filter: blur(9px);
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1   {
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.username {
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 75px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.verified-badge {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url("../../../public/img/verified.png") center center / contain no-repeat;
+    margin-right: 5px;
+    position: relative;
+}
+
+.verified-badge:hover::before {
+    content: "Verified";
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #212121;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0.6;
+    transition: opacity 0.8s ease-in-out;
+    font-family: "Roboto", sans-serif;
+}
+
+.verified-badge:hover::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-width: 5px;
+    border-color: transparent transparent transparent transparent;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.verified-badge:hover::before,
+.verified-badge:hover::after {
+    opacity: 0.7;
+}
+
+.dev-badge {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url("../../../public/img/dev.png") center center / contain no-repeat;
+    margin-right: 5px;
+    position: relative;
+}
+
+.dev-badge:hover::before {
+    content: "Developer of Lyli";
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #212121;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0.6;
+    transition: opacity 0.8s ease-in-out;
+    font-family: "Roboto", sans-serif;
+}
+
+.dev-badge:hover::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-width: 5px;
+    border-color: transparent transparent transparent transparent;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.dev-badge:hover::before,
+.dev-badge:hover::after {
+    opacity: 0.7;
+}
+
+.icon {
+    position: relative;
+    top: 40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+    user-select: none;
+}
+
+/* .button {
+    color: #fff;
+    opacity: 0.8;
+    background-color: #f44336;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 230px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #c97771;
+    opacity: 1;
+    font-size: 1.5em;
+    text-align: center;
+    display: inline-block;
+    padding: 14px 230px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Montserrat', sans-serif;
+} */
+
+.button {
+    position: relative;
+    top: 10px;
+    font-family: monospace;
+    font-size: 1.5rem;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    padding: 10px 100px;
+    border-radius: 10px;
+    border: 2px solid #FAFAFA;
+    background: transparent;
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px #fafafab6;
+    margin: 25px auto;
+    display: block;
+    max-width: 240px;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-text {
+    color: #888;
+    font-size: 14px;
+}
+
+
+.button:hover {
+    box-shadow: none;
+    transform: translate(1px, 1px);
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .username {
+        font-size: 1.2em;
+    }
+
+    .profilepicture {
+        top: 100px;
+        width: 150px;
+        height: 150px;
+        margin-top: 30px;
+    }
+
+    .link_button {
+        font-size: 1.2rem;
+        padding: 10px 50px;
+        margin: 15px auto;
+    }
+
+    .username {
+        margin-top: 125px;
+    }
+
+    .dev-badge {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .verified-badge {
+        width: 16px;
+        height: 16px;
+    }
+}

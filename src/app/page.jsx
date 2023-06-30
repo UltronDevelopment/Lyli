@@ -1,7 +1,6 @@
 /* 
-    File:    src/app/globals.css
-    Author:  UltronReal <business@ultronprivat.de>
-    Co-Author: RappyTV <rappytv@rappytv.com>
+    File:    src/app/page.jsx
+    Author:  RappyTV <rappytv@rappytv.com>
     Date:    1 June 2023
 
     This program is free software: you can redistribute it and/or modify it
@@ -19,3 +18,9 @@
 
     © UPN Development 2021
 */
+
+export default function Home() {
+    return (
+        <></>
+    )
+}

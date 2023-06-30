@@ -1,8 +1,7 @@
 /* 
-    File:    src/app/globals.css
-    Author:  UltronReal <business@ultronprivat.de>
-    Co-Author: RappyTV <rappytv@rappytv.com>
-    Date:    1 June 2023
+    File:    src/app/[list]/layout.jsx
+    Author:  RappyTV <rappytv@rappytv.com>
+    Date:    30 June 2023
 
     This program is free software: you can redistribute it and/or modify it
     under the terms of the GNU General Public License as published by the Free
@@ -19,3 +18,20 @@
 
     © UPN Development 2021
 */
+
+import './style.css'
+import { Inter } from 'next/font/google'
+
+const inter = Inter({ subsets: ['latin'] })
+
+export const metadata = {
+    title: 'Lyli - User',
+}
+
+export default function RootLayout({ children }) {
+    return (
+        <html lang="en">
+            <body className={inter.className}>{children}</body>
+        </html>
+    )
+}
