@@ -23,6 +23,7 @@ import { notFound } from 'next/navigation';
 
 const lists = [
     {
+        name: `UltronReal`,
         user: {
             name: `ultronreal`,
             avatar: `https://cdn.discordapp.com/avatars/846419661456539738/ac088a0165acdd3722d60a4c36ac8bdc.png?size=1024`,
@@ -43,17 +44,19 @@ const lists = [
 ];
 
 export async function generateMetadata({ params: { list: path } }) {
-    const list = lists.find((list) => `%40${list.user.name}` == path);
+    const list = lists.find((list) => list.name.toLowerCase() == path.toLowerCase());
 
     if(!list) return notFound();
 
     return {
-        title: `Lyli - @${list.user.name}`,
+        title: `Lyli - ${list.name}`,
     }
 }
 
 const ListPage = ({ params: { list: path } }) => {
-    const list = lists.find((list) => `%40${list.user.name}` == path);
+    const list = lists.find((list) => list.name.toLowerCase() == path.toLowerCase());
+
+    if(!list) return;
 
     return (
         <>
