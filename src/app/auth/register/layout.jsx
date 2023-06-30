@@ -19,7 +19,7 @@
     © UPN Development 2021
 */
 
-import '../../globals.css'
+import '../auth.css'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
