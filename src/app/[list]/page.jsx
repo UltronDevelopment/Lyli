@@ -59,8 +59,8 @@ const ListPage = ({ params: { list: path } }) => {
         <>
             <img className="icon" src={list.user.avatar} alt="icon" />
             <h1 className="username">
-                @{list.user.name} {list.user.flags.map((flag) =>
-                    <span className={`${flag}-badge`}></span>
+                @{list.user.name} {list.user.flags.map((flag, index) =>
+                    <span className={`${flag}-badge`} key={index}></span>
                 )}
             </h1>
             <br />
