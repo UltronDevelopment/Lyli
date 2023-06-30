@@ -1,0 +1,36 @@
+/* 
+    File:    src/app/error.jsx
+    Author:  RappyTV <rappytv@rappytv.com>
+    Date:    30 June 2023
+
+    This program is free software: you can redistribute it and/or modify it
+    under the terms of the GNU General Public License as published by the Free
+    Software Foundation, either version 3 of the License, or (at your option) any
+    later version.
+
+    This program is distributed in the hope that it will be useful, but WITHOUT
+    ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+    FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+    details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program. If not, see <https://www.gnu.org/licenses/>.
+
+    © UPN Development 2021
+*/
+
+'use client'
+ 
+import { useEffect } from 'react'
+ 
+export default function Error({ error, reset }) {
+    useEffect(() => {
+        console.error(error)
+    }, [error])
+    
+    return (
+        <div>
+        <h2>Something went wrong!</h2>
+        </div>
+    )
+}
