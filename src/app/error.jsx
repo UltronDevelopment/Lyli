@@ -1,8 +1,7 @@
 /* 
-    File:    src/app/globals.css
-    Author:  UltronReal <business@ultronprivat.de>
-    Co-Author: RappyTV <rappytv@rappytv.com>
-    Date:    1 June 2023
+    File:    src/app/error.jsx
+    Author:  RappyTV <rappytv@rappytv.com>
+    Date:    30 June 2023
 
     This program is free software: you can redistribute it and/or modify it
     under the terms of the GNU General Public License as published by the Free
@@ -19,3 +18,19 @@
 
     © UPN Development 2021
 */
+
+'use client'
+ 
+import { useEffect } from 'react'
+ 
+export default function Error({ error, reset }) {
+    useEffect(() => {
+        console.error(error)
+    }, [error])
+    
+    return (
+        <div>
+        <h2>Something went wrong!</h2>
+        </div>
+    )
+}
